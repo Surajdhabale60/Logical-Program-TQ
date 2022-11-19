@@ -21,5 +21,19 @@ namespace TestQuestions
                 b = c;
             }
         }
+
+        public void ReverseNum(int num)
+        {
+            int reverse = 0;
+            Console.WriteLine("Number before Reverse is : " + num);
+            while (num > 0)
+            {
+                int remainder = num % 10;
+                reverse = reverse * 10 + remainder;
+
+                num /= 10;
+            }
+            Console.WriteLine("After reverse number is :" + reverse);
+        }
     }
 }

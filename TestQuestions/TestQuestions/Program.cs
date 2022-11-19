@@ -6,6 +6,7 @@
         {
             TestMain testMain = new TestMain();
             testMain.Fibonacci(20);
+            testMain.ReverseNum(50);
         }
     }
 }
