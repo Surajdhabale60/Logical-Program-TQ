@@ -1,12 +1,25 @@
-﻿namespace TestQuestions
+namespace TestQuestions
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            TestMain testMain = new TestMain();
-            testMain.Fibonacci(20);
-            testMain.ReverseNum(50);
+            while (true)
+            {
+                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.ReverseNum");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        TestMain testMain = new TestMain();
+                        testMain.print();
+                        break;
+                    case 2:
+                        TestMain testMain1 = new TestMain();
+                        testMain1.ReverseNum();
+                        break;
+                }
+            }
         }
     }
 }
