@@ -6,34 +6,35 @@ using System.Threading.Tasks;
 
 namespace TestQuestions
 {
-    internal class TestMain
+    public class TestMain
     {
-        public void Fibonacci(int num)
+        int firstNum = 0, secondNum = 1, thirdNum = 0;
+        int revNum = 0;
+        public void print()
         {
-            
-            int a = 0, b = 1;
-            Console.Write("Fibonacci Series is : " + a + " " + b);
-            for (int i = 0; i < num; i++)
-            {
-                int c = a + b;
-                Console.Write(c + " ");
-                a = b;
-                b = c;
-            }
-        }
-
-        public void ReverseNum(int num)
-        {
-            int reverse = 0;
-            Console.WriteLine("Number before Reverse is : " + num);
+            Console.WriteLine("Enter the no to print FibonacciSeries");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(firstNum + "\n" + secondNum);
             while (num > 0)
             {
-                int remainder = num % 10;
-                reverse = reverse * 10 + remainder;
-
-                num /= 10;
+                thirdNum = firstNum + secondNum;
+                Console.WriteLine(thirdNum);
+                firstNum = secondNum;
+                secondNum = thirdNum;
+                num--;
             }
-            Console.WriteLine("After reverse number is :" + reverse);
+        }
+        public void ReverseNum()
+        {
+                Console.WriteLine("Enter No");
+                int num = Convert.ToInt32(Console.ReadLine());
+                while (num > 0)
+                {
+                    int reminder = num % 10;
+                    revNum = revNum * 10 + reminder;
+                    num = num / 10;
+                }
+                Console.WriteLine(revNum);
         }
     }
 }
