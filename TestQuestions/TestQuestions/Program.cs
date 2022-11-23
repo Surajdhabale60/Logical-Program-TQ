@@ -19,8 +19,12 @@
                         testMain1.ReverseNum();
                         break;
                     case 3:
-                        TestMain main = new TestMain();
-                        main.PerfectNumber();
+                        TestMain main2 = new TestMain();
+                        main2.PerfectNumber();
+                        break;
+                    case 4:
+                        TestMain main3 = new TestMain();
+                        main3.CheckPrime();
                         break;
                 }
             }
