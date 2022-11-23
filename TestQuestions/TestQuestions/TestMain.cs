@@ -34,7 +34,24 @@ namespace TestQuestions
                     revNum = revNum * 10 + reminder;
                     num = num / 10;
                 }
-                Console.WriteLine(revNum);
+                Console.WriteLine(revNum);   
+        }
+        public void PerfectNumber()
+        {
+            int sum = 0;
+            Console.WriteLine("Enter Number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= num / 2; i++)
+            {
+                if (num % i == 0)
+                {
+                    sum += i;
+                }
+            }
+            if (num == sum)
+                Console.WriteLine("Number Entered is Perfect Number");
+            else
+                Console.WriteLine("Number Entered is not a Perfect Number");
         }
     }
 }
