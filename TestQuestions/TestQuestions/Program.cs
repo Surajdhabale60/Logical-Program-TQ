@@ -6,7 +6,7 @@
         {
             while (true)
             {
-                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.ReverseNum");
+                Console.WriteLine("\nselect Program\n 1.Fibonacci Series\n 2.Reverse Number\n 3.Perfect Number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -17,6 +17,10 @@
                     case 2:
                         TestMain testMain1 = new TestMain();
                         testMain1.ReverseNum();
+                        break;
+                    case 3:
+                        TestMain main = new TestMain();
+                        main.PerfectNumber();
                         break;
                 }
             }
