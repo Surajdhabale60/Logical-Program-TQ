@@ -9,7 +9,7 @@ namespace TestQuestions
         {
             while (true)
             {
-                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.ReverseNum\n 3.Perfect Number\n 4.Prime Number");
+                Console.WriteLine("\nselect Program\n 1.FibonacciSeries\n 2.ReverseNum\n 3.Perfect Number\n 4.Prime Number\n 5.Coupon Number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -28,6 +28,10 @@ namespace TestQuestions
                     case 4:
                         TestMain main3 = new TestMain();
                         main3.CheckPrime();
+                        break;
+                    case 5:
+                        TestMain main4 = new TestMain();
+                        main4.CouponNumber();
                         break;
                 }
             }
